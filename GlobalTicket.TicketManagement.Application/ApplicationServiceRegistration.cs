@@ -17,6 +17,7 @@ namespace GlobalTicket.TicketManagement.Application
             services.AddMediatR(Assembly.GetExecutingAssembly());
 
             return services;
+
         }
     }
 }

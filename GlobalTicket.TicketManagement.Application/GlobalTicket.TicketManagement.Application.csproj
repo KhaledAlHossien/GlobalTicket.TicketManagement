@@ -16,4 +16,14 @@
     <ProjectReference Include="..\GlobalTicket.TicketManagement.Domain\GlobalTicket.TicketManagement.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Features\Categories\Commands\" />
+    <Folder Include="Features\Categories\Queries\GetCategoriesList\" />
+    <Folder Include="Features\Categories\Queries\GetCategoriesListWithEvents\" />
+    <Folder Include="Features\Events\Commands\CreateEvent\" />
+    <Folder Include="Features\Orders\Commands\" />
+    <Folder Include="Features\Orders\Queries\" />
+    <Folder Include="NewFolder\" />
+  </ItemGroup>
+
 </Project>

@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GlobalTicket.TicketManagement.Application.Features.Events
+namespace GlobalTicket.TicketManagement.Application.Features.Events.Queries.GitEventsList
 {
     internal class GetEventsListQueryHandler : IRequestHandler<GetEventsListQuery, List<EventListVm>>
     {

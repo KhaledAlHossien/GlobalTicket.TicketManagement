@@ -22,7 +22,7 @@ namespace GlobalTicket.TicketManagement.Application.Features.Categories.Queries.
             _mapper = mapper;
             _categoryRepository = categoryRepository;
         }
-	}
+	
 
         public async Task<List<CategoryEventListVm>> Handle(GetCategoryEventListWithEventsQuery request, CancellationToken cancellationToken)
         {

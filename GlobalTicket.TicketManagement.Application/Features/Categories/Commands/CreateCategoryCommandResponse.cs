@@ -14,6 +14,6 @@ namespace GlobalTicket.TicketManagement.Application.Features.Categories.Commands
         {
 
         }
-        public CategoryDto Category { get; set; } = default;
+        public CreateCategoryDto Category { get; set; } = default;
     }
 }

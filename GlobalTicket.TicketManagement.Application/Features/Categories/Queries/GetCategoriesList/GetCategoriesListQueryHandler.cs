@@ -11,21 +11,21 @@ using MediatR;
 
 namespace GlobalTicket.TicketManagement.Application.Features.Categories.Queries.GetCategoriesList
 {
-    public class GetEventsListQueryHandler : IRequestHandler<GetEventsListQuery, List<EventListVm>>
+    public class GetCategoriesListQueryHandler : IRequestHandler<GetCategoriesListQuery, List<CategoryListVm>>
     {
-        private readonly IAsyncRepository<Event> _eventRepository;
+        private readonly IAsyncRepository<Category> _categoryRepository;
         private readonly IMapper _mapper;
 
-        public GetEventsListQueryHandler(IMapper mapper, IAsyncRepository<Event> eventRepository)
+        public GetCategoriesListQueryHandler(IMapper mapper, IAsyncRepository<Category> categoryRepository)
         {
             _mapper = mapper;
-            _eventRepository = eventRepository;
+            _categoryRepository = categoryRepository;
         }
 
-        public async Task<List<EventListVm>> Handle(GetEventsListQuery request, CancellationToken cancellationToken)
+        public async Task<List<CategoryListVm>> Handle(GetCategoriesListQuery request, CancellationToken cancellationToken)
         {
-            var allEvents = (await _eventRepository.ListAllAsync()).OrderBy(x => x.Date);
-            return _mapper.Map<List<EventListVm>>(allEvents);
+            var allCategories = (await _categoryRepository.ListAllAsync()).OrderBy(x => x.Name);
+            return _mapper.Map<List<CategoryListVm>>(allCategories);
         }
     }
 

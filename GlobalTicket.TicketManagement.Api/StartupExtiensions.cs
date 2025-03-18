@@ -24,8 +24,8 @@ namespace GlobalTicket.TicketManagement.Api
 
         }
 
-        public static WebApplication ConfigurePipeline(this WebApplication app) 
-        { 
+        public static WebApplication ConfigurePipeline(this WebApplication app)
+        {
             app.UseHttpsRedirection();
             app.UseRouting();
 
@@ -53,5 +53,6 @@ namespace GlobalTicket.TicketManagement.Api
                 //add logging here later on
             }
 
+        }
     }
 }

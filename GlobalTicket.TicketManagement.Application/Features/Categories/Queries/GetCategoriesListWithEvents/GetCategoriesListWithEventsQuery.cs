@@ -7,7 +7,7 @@ using MediatR;
 
 namespace GlobalTicket.TicketManagement.Application.Features.Categories.Queries.GetCategoriesListWithEvents
 {
-    public class GetCategoryEventListWithEventsQuery : IRequest<List<CategoryEventListVm>>
+    public class GetCategoriesListWithEventsQuery : IRequest<List<CategoryEventListVm>>
     {
         public bool IncludeHistory {  get; set; }
     }
